@@ -8,21 +8,21 @@
 - Add `exec lo3_matchplugin` to your servers gamemode cfg (e.g. `gamemode_competitive.cfg`)
 
 ## How it works
-### Warmup phase
-- `.lo3` Start a match
-- `.pracc` Start a pracc
+### Warmup Phase
+- `.lo3` Start match
+- `.pracc` Start pracc
 - `.scramble` Player scramble 3 times
 - `.help` Show command help
 
-### Match phase
+### Match Phase
 - `.pause` Pause match
 - `.unpause` Unpause match
 - `.restart` Restart match (Score to 0)
-- `.forceend` Cancel a match
+- `.forceend` Cancel match (Back to warmup)
 
-### Pracc phase
+### Pracc Phase
 - `.restart` Restart pracc (Score to 0)
-- `.forceend` Cancel a match
-
+- `.forceend` Cancel pracc (Back to warmup)
+ 
 ## Credit
 [@execut1ve](https://twitter.com/execut1ve)
