@@ -1,5 +1,5 @@
 --[[
-******************************************************[ lo3 gsys matchplugin CS2 ]********************************************************
+******************************************************[ lo3 matchplugin CS2 ]********************************************************
 	Original plugin created by: execut1ve
 	Version: 1.0
 	Github: https://github.com/execut1ve/
@@ -12,12 +12,12 @@
 	Steam: https://steamcommunity.com/profiles/76561197965623687
 
 	*<News>
-	  Added PrintWaitingPracc (Print message during the pracc period) [.restart .forceend(back to warmup)]					- V
-	  Added PrintWaitingPug (Print message during the match period) [.pause .unpause .restart(restart score) .forceend]		- V
-	* PrintWaitingforPlayers *(default print message during the warmup period) [.lo3 .pracc .scramble .help]				- V
-	- Added timers WARPUG_TIME, WARPRACC_TIME																				- V
-	* Use timer WARMUP_TIME *(default timer and config)																		- V
-	- Added .pracc, .restart <Convars:GetCommandClient()>																	- V
+	  Added PrintWaitingPracc (Print message during the pracc period) [.restart .forceend(back to warmup)]
+	  Added PrintWaitingPug (Print message during the match period) [.pause .unpause .restart(restart score) .forceend]
+	* PrintWaitingforPlayers *(default print message during the warmup period) [.lo3 .pracc .scramble .help]
+	- Added timers WARPUG_TIME, WARPRACC_TIME
+	* Use timer WARMUP_TIME *(default timer and config)
+	- Added .pracc, .restart <Convars:GetCommandClient()>
 	- Replace <fr> traduction																								- V
 	*<Past>
 	_____________________________________________________________________________________________________________________________
@@ -30,7 +30,6 @@
 --]]
 
 require "libs.timers"
-
 chatPrefix = "{darkgreen} [LO3] "
  
 -- Les valeurs ci-dessous sont à réglées dans les timers à partir de la ligne <'95'>
@@ -75,7 +74,6 @@ function PrintHelp()
     HC_PrintChatAll_pug("{white}【Échauffement】")
     HC_PrintChatAll_pug("{darkgreen}.lo3{white} : Commence le match。")
     HC_PrintChatAll_pug("{darkgreen}.pracc{white} : Commence le pracc。")
-    HC_PrintChatAll_pug("{darkgreen}.cut{white} : Commence le cut round。")
     HC_PrintChatAll_pug("{darkgreen}.scramble{white} : Mélange les équipes 3 fois。")
     HC_PrintChatAll_pug("{white}【Pendant la partie】")
     HC_PrintChatAll_pug("{red}.pause{white} : Demande une pause au prochain freezetime。")
