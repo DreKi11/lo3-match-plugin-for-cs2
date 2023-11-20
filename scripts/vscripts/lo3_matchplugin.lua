@@ -32,7 +32,7 @@
 require "libs.timers"
 chatPrefix = "{darkgreen} [LO3] "
  
--- Les valeurs ci-dessous sont à réglées dans les timers à partir de la ligne <'91,114,136'>
+-- Les valeurs ci-dessous sont à réglées dans les timers à partir de la ligne <'95,117,139'>
 -- Affiche des messages à intervalle régulier pendant les phases de || warmup || lo3 || pracc ||
 -- -------------------------------------------------------------------
 WARMUP_TIME = true
